@@ -1,0 +1,8 @@
+1. The minDFA will be outputted in the minDFA.xml file.
+2. I have included dead states as all transitions are needed in a DFA, (cos210), and to avoid assumptions. I was not sure whether not to as the specs did not specify so I think I am safe.
+3. !!!! Since the epsilon symbol was troublesome, I have used '<' as a substitute. So a a|< input is valid.
+
+5. Linux: run the program with ./prac1.out
+
+6. The minDFA.xml does not show start nor accepting states just like the specifications but the object - node- has the member variables.
+7. No imports were used.
