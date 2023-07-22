@@ -1,0 +1,174 @@
+/*Keabetswe Madumo OSP*/
+#include <iostream>
+#include <cstring>
+#include <iomanip>
+#include <cstdlib>
+#include <string>
+#include <cctype>
+using namespace std;
+
+string s = "ACBAACACBAACBABACBA"; //<--- Enter string to be translated here
+
+
+
+void backtrack(string &input, int first)
+{
+    string t = input.substr(0,first-1);
+    t += "ZY";
+    t += input.substr(first+1);
+    input = t;
+
+}
+
+void setError()
+{
+    s = "mapping not possible";
+}
+void transform(string &input, int first, string xyz)
+{
+    string t = input.substr(0,first);
+    if(xyz=="X")
+    {
+        t+="X";
+        t+= input.substr(first+4);
+    }
+    else if(xyz=="Z")
+    {
+        t+="Z";
+        t+= input.substr(first+2);
+    }
+    else
+    {
+        t+="Y";
+        t+= input.substr(first+3);
+    }
+    input=t;
+}
+
+void recursiveHelper(string &input, int first)
+{
+   if(first < input.size())
+   {
+        if(first == input.size()-1) //one unprocessed letter left
+        {
+            if(input[first]=='B')
+            {
+                if(input[first-1]=='X')
+                {
+                    //backtrack
+                    backtrack(input, first);
+                    first++;
+                    recursiveHelper(input, first);
+                }
+                else
+                {
+                    setError();
+                }
+            }
+            else
+            {
+                setError();
+            }
+        } 
+        else if(first == input.size()-2)//two unprocessed letters left
+        {
+            if(input[first]=='A'&& input[first+1]=='C')
+            {
+                transform(input, first, "Z");
+                first++;
+                recursiveHelper(input, first);
+            }
+            else
+            {
+                setError();
+            }
+        }
+        else if(first == input.size()-3)//three unprocessed letters left
+        {
+            if(input[first]=='B'&& input[first+1]=='A' && input[first+2]=='B')
+            {
+                transform(input, first, "Y");
+                first++;
+                recursiveHelper(input, first);
+            }
+            else if(input[first]=='A'&& input[first+1]=='C')
+            {
+                transform(input, first, "Z");
+                first++;
+                recursiveHelper(input, first);
+            }
+            else if(input[first]=='B')
+            {
+                if(first-1>=0 && input[first-1]=='X')
+                {
+                    //backtrack
+                    backtrack(input, first);
+                    first++;
+                    recursiveHelper(input, first);
+                }
+                else
+                {
+                    setError();
+                }   
+            }
+            else
+            {
+                setError();
+            }
+        }
+        else 
+        {
+            if(input[first]=='A'&& input[first+1]=='C' && input[first+2]=='B' && input[first+3]=='A')
+            {
+                transform(input, first, "X");
+                first++;
+                recursiveHelper(input, first);
+            }
+            else if(input[first]=='B' && input[first+1]=='A' && input[first+2]=='B')
+            {
+                transform(input, first, "Y");
+                first++;
+                recursiveHelper(input, first);
+            }
+            else if(input[first]=='A'&& input[first+1]=='C')
+            {
+                transform(input, first, "Z");
+                first++;
+                recursiveHelper(input, first);
+            }
+            else if(input[first]=='B' && first-1>=0 && input[first-1]=='X')
+            {
+                backtrack(input, first);
+                first++;
+                recursiveHelper(input, first);
+            }
+            else
+            {
+                setError();
+            }
+        }
+   }
+}
+
+void recursive(string &input)
+{
+    if(input=="")
+    {
+        setError();
+    }
+    else
+    {
+        recursiveHelper(input, 0);
+    }
+    
+}
+
+
+int main()
+{
+
+  recursive(s);
+  cout << s;
+  return 0;
+
+}
