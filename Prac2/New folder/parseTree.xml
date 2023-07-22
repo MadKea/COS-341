@@ -1,0 +1,390 @@
+<PROGR id='115'  children: '130' '3730' >
+	<ALGO id='130'  children: '145' '670' '700' >
+		<INSTR id='145'  children: '160' >
+			<ASSIGN id='160'  children: '175' '370' >
+				<NUMVAR id='175'  children: '205' >
+					< terminal 'n'>
+					<DIGITS id='205'  children: '220' '250' >
+						<D id='220'  children: >
+							< terminal '1'>
+						</D>
+						<MORE id='250'  children: '265' >
+							<DIGITS id='265'  children: '280' '310' >
+								<D id='280'  children: >
+									< terminal '2'>
+								</D>
+								<MORE id='310'  children: >
+									< terminal ' '>
+								</MORE>
+							</DIGITS>
+						</MORE>
+					</DIGITS>
+				</NUMVAR>
+				< terminal ':'>
+				< terminal '='>
+				<NUMEXP id='370'  children: '385' >
+					<DECNUM id='385'  children: '400' >
+						<POS id='400'  children: '415' '610' '640' >
+							<INT id='415'  children: '445' >
+								< terminal '1'>
+								<MORE id='445'  children: '460' >
+									<DIGITS id='460'  children: '475' '505' >
+										<D id='475'  children: >
+											< terminal '2'>
+										</D>
+										<MORE id='505'  children: '520' >
+											<DIGITS id='520'  children: '535' '565' >
+												<D id='535'  children: >
+													< terminal '3'>
+												</D>
+												<MORE id='565'  children: >
+													< terminal ' '>
+												</MORE>
+											</DIGITS>
+										</MORE>
+									</DIGITS>
+								</MORE>
+							</INT>
+							< terminal '.'>
+							<D id='610'  children: >
+								< terminal '0'>
+							</D>
+							<D id='640'  children: >
+								< terminal '0'>
+							</D>
+						</POS>
+					</DECNUM>
+				</NUMEXP>
+			</ASSIGN>
+		</INSTR>
+		<COMMENT id='670'  children: >
+			< terminal ' '>
+		</COMMENT>
+		<SEQ id='700'  children: '730' >
+			< terminal ';'>
+			<ALGO id='730'  children: '745' '1270' '1300' >
+				<INSTR id='745'  children: '760' >
+					<ASSIGN id='760'  children: '775' '970' >
+						<NUMVAR id='775'  children: '805' >
+							< terminal 'n'>
+							<DIGITS id='805'  children: '820' '850' >
+								<D id='820'  children: >
+									< terminal '2'>
+								</D>
+								<MORE id='850'  children: '865' >
+									<DIGITS id='865'  children: '880' '910' >
+										<D id='880'  children: >
+											< terminal '4'>
+										</D>
+										<MORE id='910'  children: >
+											< terminal ' '>
+										</MORE>
+									</DIGITS>
+								</MORE>
+							</DIGITS>
+						</NUMVAR>
+						< terminal ':'>
+						< terminal '='>
+						<NUMEXP id='970'  children: '985' >
+							<DECNUM id='985'  children: '1000' >
+								<POS id='1000'  children: '1015' '1210' '1240' >
+									<INT id='1015'  children: '1045' >
+										< terminal '3'>
+										<MORE id='1045'  children: '1060' >
+											<DIGITS id='1060'  children: '1075' '1105' >
+												<D id='1075'  children: >
+													< terminal '2'>
+												</D>
+												<MORE id='1105'  children: '1120' >
+													<DIGITS id='1120'  children: '1135' '1165' >
+														<D id='1135'  children: >
+															< terminal '9'>
+														</D>
+														<MORE id='1165'  children: >
+															< terminal ' '>
+														</MORE>
+													</DIGITS>
+												</MORE>
+											</DIGITS>
+										</MORE>
+									</INT>
+									< terminal '.'>
+									<D id='1210'  children: >
+										< terminal '0'>
+									</D>
+									<D id='1240'  children: >
+										< terminal '0'>
+									</D>
+								</POS>
+							</DECNUM>
+						</NUMEXP>
+					</ASSIGN>
+				</INSTR>
+				<COMMENT id='1270'  children: >
+					< terminal ' '>
+				</COMMENT>
+				<SEQ id='1300'  children: '1330' >
+					< terminal ';'>
+					<ALGO id='1330'  children: '1345' '3265' '3295' >
+						<INSTR id='1345'  children: '1360' >
+							<BRANCH id='1360'  children: '1405' '1900' '3235' >
+								< terminal 'i'>
+								< terminal '('>
+								<BOOLEXPR id='1405'  children: '1420' >
+									<CMPR id='1420'  children: '1465' '1660' >
+										< terminal '<'>
+										< terminal '('>
+										<NUMEXP id='1465'  children: '1480' >
+											<NUMVAR id='1480'  children: '1510' >
+												< terminal 'n'>
+												<DIGITS id='1510'  children: '1525' '1555' >
+													<D id='1525'  children: >
+														< terminal '1'>
+													</D>
+													<MORE id='1555'  children: '1570' >
+														<DIGITS id='1570'  children: '1585' '1615' >
+															<D id='1585'  children: >
+																< terminal '2'>
+															</D>
+															<MORE id='1615'  children: >
+																< terminal ' '>
+															</MORE>
+														</DIGITS>
+													</MORE>
+												</DIGITS>
+											</NUMVAR>
+										</NUMEXP>
+										< terminal ','>
+										<NUMEXP id='1660'  children: '1675' >
+											<NUMVAR id='1675'  children: '1705' >
+												< terminal 'n'>
+												<DIGITS id='1705'  children: '1720' '1750' >
+													<D id='1720'  children: >
+														< terminal '2'>
+													</D>
+													<MORE id='1750'  children: '1765' >
+														<DIGITS id='1765'  children: '1780' '1810' >
+															<D id='1780'  children: >
+																< terminal '4'>
+															</D>
+															<MORE id='1810'  children: >
+																< terminal ' '>
+															</MORE>
+														</DIGITS>
+													</MORE>
+												</DIGITS>
+											</NUMVAR>
+										</NUMEXP>
+										< terminal ')'>
+									</CMPR>
+								</BOOLEXPR>
+								< terminal ')'>
+								< terminal 't'>
+								< terminal '{'>
+								<ALGO id='1900'  children: '1915' '2260' '2290' >
+									<INSTR id='1915'  children: '1930' >
+										<ASSIGN id='1930'  children: '1945' '2080' >
+											<NUMVAR id='1945'  children: '1975' >
+												< terminal 'n'>
+												<DIGITS id='1975'  children: '1990' '2020' >
+													<D id='1990'  children: >
+														< terminal '3'>
+													</D>
+													<MORE id='2020'  children: >
+														< terminal ' '>
+													</MORE>
+												</DIGITS>
+											</NUMVAR>
+											< terminal ':'>
+											< terminal '='>
+											<NUMEXP id='2080'  children: '2095' >
+												<NUMVAR id='2095'  children: '2125' >
+													< terminal 'n'>
+													<DIGITS id='2125'  children: '2140' '2170' >
+														<D id='2140'  children: >
+															< terminal '1'>
+														</D>
+														<MORE id='2170'  children: '2185' >
+															<DIGITS id='2185'  children: '2200' '2230' >
+																<D id='2200'  children: >
+																	< terminal '2'>
+																</D>
+																<MORE id='2230'  children: >
+																	< terminal ' '>
+																</MORE>
+															</DIGITS>
+														</MORE>
+													</DIGITS>
+												</NUMVAR>
+											</NUMEXP>
+										</ASSIGN>
+									</INSTR>
+									<COMMENT id='2260'  children: >
+										< terminal ' '>
+									</COMMENT>
+									<SEQ id='2290'  children: '2320' >
+										< terminal ';'>
+										<ALGO id='2320'  children: '2335' '2740' '2770' >
+											<INSTR id='2335'  children: '2350' >
+												<ASSIGN id='2350'  children: '2365' '2560' >
+													<NUMVAR id='2365'  children: '2395' >
+														< terminal 'n'>
+														<DIGITS id='2395'  children: '2410' '2440' >
+															<D id='2410'  children: >
+																< terminal '1'>
+															</D>
+															<MORE id='2440'  children: '2455' >
+																<DIGITS id='2455'  children: '2470' '2500' >
+																	<D id='2470'  children: >
+																		< terminal '2'>
+																	</D>
+																	<MORE id='2500'  children: >
+																		< terminal ' '>
+																	</MORE>
+																</DIGITS>
+															</MORE>
+														</DIGITS>
+													</NUMVAR>
+													< terminal ':'>
+													< terminal '='>
+													<NUMEXP id='2560'  children: '2575' >
+														<NUMVAR id='2575'  children: '2605' >
+															< terminal 'n'>
+															<DIGITS id='2605'  children: '2620' '2650' >
+																<D id='2620'  children: >
+																	< terminal '2'>
+																</D>
+																<MORE id='2650'  children: '2665' >
+																	<DIGITS id='2665'  children: '2680' '2710' >
+																		<D id='2680'  children: >
+																			< terminal '4'>
+																		</D>
+																		<MORE id='2710'  children: >
+																			< terminal ' '>
+																		</MORE>
+																	</DIGITS>
+																</MORE>
+															</DIGITS>
+														</NUMVAR>
+													</NUMEXP>
+												</ASSIGN>
+											</INSTR>
+											<COMMENT id='2740'  children: >
+												< terminal ' '>
+											</COMMENT>
+											<SEQ id='2770'  children: '2800' >
+												< terminal ';'>
+												<ALGO id='2800'  children: '2815' '3160' '3190' >
+													<INSTR id='2815'  children: '2830' >
+														<ASSIGN id='2830'  children: '2845' '3040' >
+															<NUMVAR id='2845'  children: '2875' >
+																< terminal 'n'>
+																<DIGITS id='2875'  children: '2890' '2920' >
+																	<D id='2890'  children: >
+																		< terminal '2'>
+																	</D>
+																	<MORE id='2920'  children: '2935' >
+																		<DIGITS id='2935'  children: '2950' '2980' >
+																			<D id='2950'  children: >
+																				< terminal '4'>
+																			</D>
+																			<MORE id='2980'  children: >
+																				< terminal ' '>
+																			</MORE>
+																		</DIGITS>
+																	</MORE>
+																</DIGITS>
+															</NUMVAR>
+															< terminal ':'>
+															< terminal '='>
+															<NUMEXP id='3040'  children: '3055' >
+																<NUMVAR id='3055'  children: '3085' >
+																	< terminal 'n'>
+																	<DIGITS id='3085'  children: '3100' '3130' >
+																		<D id='3100'  children: >
+																			< terminal '3'>
+																		</D>
+																		<MORE id='3130'  children: >
+																			< terminal ' '>
+																		</MORE>
+																	</DIGITS>
+																</NUMVAR>
+															</NUMEXP>
+														</ASSIGN>
+													</INSTR>
+													<COMMENT id='3160'  children: >
+														< terminal ' '>
+													</COMMENT>
+													<SEQ id='3190'  children: >
+														< terminal ' '>
+													</SEQ>
+												</ALGO>
+											</SEQ>
+										</ALGO>
+									</SEQ>
+								</ALGO>
+								< terminal '}'>
+								<ELSE id='3235'  children: >
+									< terminal ' '>
+								</ELSE>
+							</BRANCH>
+						</INSTR>
+						<COMMENT id='3265'  children: >
+							< terminal ' '>
+						</COMMENT>
+						<SEQ id='3295'  children: '3325' >
+							< terminal ';'>
+							<ALGO id='3325'  children: '3340' '3565' '3595' >
+								<INSTR id='3340'  children: '3355' >
+									<OUTPUT id='3355'  children: '3370' >
+										<VALUE id='3370'  children: '3400' >
+											< terminal 'o'>
+											<NUMVAR id='3400'  children: '3430' >
+												< terminal 'n'>
+												<DIGITS id='3430'  children: '3445' '3475' >
+													<D id='3445'  children: >
+														< terminal '1'>
+													</D>
+													<MORE id='3475'  children: '3490' >
+														<DIGITS id='3490'  children: '3505' '3535' >
+															<D id='3505'  children: >
+																< terminal '2'>
+															</D>
+															<MORE id='3535'  children: >
+																< terminal ' '>
+															</MORE>
+														</DIGITS>
+													</MORE>
+												</DIGITS>
+											</NUMVAR>
+										</VALUE>
+									</OUTPUT>
+								</INSTR>
+								<COMMENT id='3565'  children: >
+									< terminal ' '>
+								</COMMENT>
+								<SEQ id='3595'  children: '3625' >
+									< terminal ';'>
+									<ALGO id='3625'  children: '3640' '3670' '3700' >
+										<INSTR id='3640'  children: >
+											< terminal 'h'>
+										</INSTR>
+										<COMMENT id='3670'  children: >
+											< terminal ' '>
+										</COMMENT>
+										<SEQ id='3700'  children: >
+											< terminal ' '>
+										</SEQ>
+									</ALGO>
+								</SEQ>
+							</ALGO>
+						</SEQ>
+					</ALGO>
+				</SEQ>
+			</ALGO>
+		</SEQ>
+	</ALGO>
+	<PROCDEFS id='3730'  children: >
+		< terminal ' '>
+	</PROCDEFS>
+</PROGR>

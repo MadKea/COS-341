@@ -1,0 +1,9 @@
+Keabetswe
+Madumo
+u20438614
+Practical 2
+
+1.I have included both .out and .exe executables in the submission. I'm sorry if .exe does not work. I had a friend my a .exe for me but I couldn't reach him after the Sunday edits so I'm on my own and cannot test it on my side. But I followed your instructions. THE CODE WORKS.
+2.You will be asked to input the name of the text file. Include the .txt.
+3.The parse tree will be in the parseTree.xml file. (You might have issues with viewing the < and > symbols under CMPR. I did not. So just keep that in mind).
+4.Errors will be in the parseTree.xml file instead of a tree.
