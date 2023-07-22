@@ -1,0 +1,16 @@
+15 GOSUB 10
+20 LET s1$ = "Proc 1 returned"
+25 PRINT s1$
+35 GOSUB 30
+40 LET s1$ = "Proc 2 returned"
+45 PRINT s1$
+50 END
+55 END
+10 REM start of Proc p1
+60 LET s1$ = "Proc 1 Called  "
+65 PRINT s1$
+70 RETURN
+30 REM start of Proc p2
+75 LET s1$ = "Proc 2 Called  "
+80 PRINT s1$
+85 RETURN
