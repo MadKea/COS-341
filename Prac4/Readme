@@ -1,0 +1,31 @@
+Keabetswe Madumo
+Practical 4
+
+Chosen input: program code (text file). Will be using OWN practical 2 parsing.
+
+Once the program is run you will be prompted to input the name of the program file. Please include the extension (.txt).
+
+The parsetree is within the parseTree.xml file and the symbol table is within the table.html file.
+
+If errors or naming convention errors are present no symbol table will be displayed as specified. However, warnings will be displayed alongside the symbol table.
+
+Semantic errors will be displayed if present alongside the symbol table.
+
+Best regards.
+
+Compilation and run
+
+Linux:
+    Using makefile
+        make
+        make run
+    Without makefile
+        g++ -c *.cpp
+        g++ *.o -o prac4.out
+        ./prac4.out
+Windows:
+    g++ -c *.cpp
+    g++ *.o -o prac4.exe
+    ./prac4.exe
+
+Thank you very much <3

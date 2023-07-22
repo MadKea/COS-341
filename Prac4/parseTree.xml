@@ -1,0 +1,365 @@
+<PROGR id='115'  children: '130' '760' >
+	<ALGO id='130'  children: '145' '280' '310' >
+		<INSTR id='145'  children: '160' >
+			<CALL id='160'  children: '205' >
+				< terminal 'c'>
+				< terminal 'p'>
+				<DIGITS id='205'  children: '220' '250' >
+					<D id='220'  children: >
+						< terminal '1'>
+					</D>
+					<MORE id='250'  children: >
+						< terminal 'ε'>
+					</MORE>
+				</DIGITS>
+			</CALL>
+		</INSTR>
+		<COMMENT id='280'  children: >
+			< terminal 'ε'>
+		</COMMENT>
+		<SEQ id='310'  children: '340' >
+			< terminal ';'>
+			<ALGO id='340'  children: '355' '490' '520' >
+				<INSTR id='355'  children: '370' >
+					<CALL id='370'  children: '415' >
+						< terminal 'c'>
+						< terminal 'p'>
+						<DIGITS id='415'  children: '430' '460' >
+							<D id='430'  children: >
+								< terminal '2'>
+							</D>
+							<MORE id='460'  children: >
+								< terminal 'ε'>
+							</MORE>
+						</DIGITS>
+					</CALL>
+				</INSTR>
+				<COMMENT id='490'  children: >
+					< terminal 'ε'>
+				</COMMENT>
+				<SEQ id='520'  children: '550' >
+					< terminal ';'>
+					<ALGO id='550'  children: '565' '700' '730' >
+						<INSTR id='565'  children: '580' >
+							<CALL id='580'  children: '625' >
+								< terminal 'c'>
+								< terminal 'p'>
+								<DIGITS id='625'  children: '640' '670' >
+									<D id='640'  children: >
+										< terminal '3'>
+									</D>
+									<MORE id='670'  children: >
+										< terminal 'ε'>
+									</MORE>
+								</DIGITS>
+							</CALL>
+						</INSTR>
+						<COMMENT id='700'  children: >
+							< terminal 'ε'>
+						</COMMENT>
+						<SEQ id='730'  children: >
+							< terminal 'ε'>
+						</SEQ>
+					</ALGO>
+				</SEQ>
+			</ALGO>
+		</SEQ>
+	</ALGO>
+	<PROCDEFS id='760'  children: '775' '1360' >
+		<PROC id='775'  children: '790' '880' >
+			< terminal 'p'>
+			<DIGITS id='790'  children: '805' '835' >
+				<D id='805'  children: >
+					< terminal '1'>
+				</D>
+				<MORE id='835'  children: >
+					< terminal 'ε'>
+				</MORE>
+			</DIGITS>
+			< terminal '{'>
+			<PROGR id='880'  children: '895' '1315' >
+				<ALGO id='895'  children: '910' '1255' '1285' >
+					<INSTR id='910'  children: '925' >
+						<ASSIGN id='925'  children: '940' '1075' >
+							<NUMVAR id='940'  children: '970' >
+								< terminal 'n'>
+								<DIGITS id='970'  children: '985' '1015' >
+									<D id='985'  children: >
+										< terminal '1'>
+									</D>
+									<MORE id='1015'  children: >
+										< terminal 'ε'>
+									</MORE>
+								</DIGITS>
+							</NUMVAR>
+							< terminal ':'>
+							< terminal '='>
+							<NUMEXPR id='1075'  children: '1090' >
+								<DECNUM id='1090'  children: '1105' >
+									<POS id='1105'  children: '1120' '1195' '1225' >
+										<INT id='1120'  children: '1150' >
+											< terminal '5'>
+											<MORE id='1150'  children: >
+												< terminal 'ε'>
+											</MORE>
+										</INT>
+										< terminal '.'>
+										<D id='1195'  children: >
+											< terminal '0'>
+										</D>
+										<D id='1225'  children: >
+											< terminal '0'>
+										</D>
+									</POS>
+								</DECNUM>
+							</NUMEXPR>
+						</ASSIGN>
+					</INSTR>
+					<COMMENT id='1255'  children: >
+						< terminal 'ε'>
+					</COMMENT>
+					<SEQ id='1285'  children: >
+						< terminal 'ε'>
+					</SEQ>
+				</ALGO>
+				<PROCDEFS id='1315'  children: >
+					< terminal 'ε'>
+				</PROCDEFS>
+			</PROGR>
+			< terminal '}'>
+		</PROC>
+		<PROCDEFS id='1360'  children: '1375' '1900' >
+			<PROC id='1375'  children: '1390' '1480' >
+				< terminal 'p'>
+				<DIGITS id='1390'  children: '1405' '1435' >
+					<D id='1405'  children: >
+						< terminal '2'>
+					</D>
+					<MORE id='1435'  children: >
+						< terminal 'ε'>
+					</MORE>
+				</DIGITS>
+				< terminal '{'>
+				<PROGR id='1480'  children: '1495' '1855' >
+					<ALGO id='1495'  children: '1510' '1795' '1825' >
+						<INSTR id='1510'  children: '1525' >
+							<ASSIGN id='1525'  children: '1540' '1675' >
+								<NUMVAR id='1540'  children: '1570' >
+									< terminal 'n'>
+									<DIGITS id='1570'  children: '1585' '1615' >
+										<D id='1585'  children: >
+											< terminal '2'>
+										</D>
+										<MORE id='1615'  children: >
+											< terminal 'ε'>
+										</MORE>
+									</DIGITS>
+								</NUMVAR>
+								< terminal ':'>
+								< terminal '='>
+								<NUMEXPR id='1675'  children: '1690' >
+									<NUMVAR id='1690'  children: '1720' >
+										< terminal 'n'>
+										<DIGITS id='1720'  children: '1735' '1765' >
+											<D id='1735'  children: >
+												< terminal '8'>
+											</D>
+											<MORE id='1765'  children: >
+												< terminal 'ε'>
+											</MORE>
+										</DIGITS>
+									</NUMVAR>
+								</NUMEXPR>
+							</ASSIGN>
+						</INSTR>
+						<COMMENT id='1795'  children: >
+							< terminal 'ε'>
+						</COMMENT>
+						<SEQ id='1825'  children: >
+							< terminal 'ε'>
+						</SEQ>
+					</ALGO>
+					<PROCDEFS id='1855'  children: >
+						< terminal 'ε'>
+					</PROCDEFS>
+				</PROGR>
+				< terminal '}'>
+			</PROC>
+			<PROCDEFS id='1900'  children: '1915' '3520' >
+				<PROC id='1915'  children: '1930' '2020' >
+					< terminal 'p'>
+					<DIGITS id='1930'  children: '1945' '1975' >
+						<D id='1945'  children: >
+							< terminal '3'>
+						</D>
+						<MORE id='1975'  children: >
+							< terminal 'ε'>
+						</MORE>
+					</DIGITS>
+					< terminal '{'>
+					<PROGR id='2020'  children: '2035' '2665' >
+						<ALGO id='2035'  children: '2050' '2185' '2215' >
+							<INSTR id='2050'  children: '2065' >
+								<CALL id='2065'  children: '2110' >
+									< terminal 'c'>
+									< terminal 'p'>
+									<DIGITS id='2110'  children: '2125' '2155' >
+										<D id='2125'  children: >
+											< terminal '1'>
+										</D>
+										<MORE id='2155'  children: >
+											< terminal 'ε'>
+										</MORE>
+									</DIGITS>
+								</CALL>
+							</INSTR>
+							<COMMENT id='2185'  children: >
+								< terminal 'ε'>
+							</COMMENT>
+							<SEQ id='2215'  children: '2245' >
+								< terminal ';'>
+								<ALGO id='2245'  children: '2260' '2395' '2425' >
+									<INSTR id='2260'  children: '2275' >
+										<CALL id='2275'  children: '2320' >
+											< terminal 'c'>
+											< terminal 'p'>
+											<DIGITS id='2320'  children: '2335' '2365' >
+												<D id='2335'  children: >
+													< terminal '2'>
+												</D>
+												<MORE id='2365'  children: >
+													< terminal 'ε'>
+												</MORE>
+											</DIGITS>
+										</CALL>
+									</INSTR>
+									<COMMENT id='2395'  children: >
+										< terminal 'ε'>
+									</COMMENT>
+									<SEQ id='2425'  children: '2455' >
+										< terminal ';'>
+										<ALGO id='2455'  children: '2470' '2605' '2635' >
+											<INSTR id='2470'  children: '2485' >
+												<CALL id='2485'  children: '2530' >
+													< terminal 'c'>
+													< terminal 'p'>
+													<DIGITS id='2530'  children: '2545' '2575' >
+														<D id='2545'  children: >
+															< terminal '4'>
+														</D>
+														<MORE id='2575'  children: >
+															< terminal 'ε'>
+														</MORE>
+													</DIGITS>
+												</CALL>
+											</INSTR>
+											<COMMENT id='2605'  children: >
+												< terminal 'ε'>
+											</COMMENT>
+											<SEQ id='2635'  children: >
+												< terminal 'ε'>
+											</SEQ>
+										</ALGO>
+									</SEQ>
+								</ALGO>
+							</SEQ>
+						</ALGO>
+						<PROCDEFS id='2665'  children: '2680' '3475' >
+							<PROC id='2680'  children: '2695' '2785' >
+								< terminal 'p'>
+								<DIGITS id='2695'  children: '2710' '2740' >
+									<D id='2710'  children: >
+										< terminal '4'>
+									</D>
+									<MORE id='2740'  children: >
+										< terminal 'ε'>
+									</MORE>
+								</DIGITS>
+								< terminal '{'>
+								<PROGR id='2785'  children: '2800' '3430' >
+									<ALGO id='2800'  children: '2815' '3160' '3190' >
+										<INSTR id='2815'  children: '2830' >
+											<ASSIGN id='2830'  children: '2845' '2980' >
+												<NUMVAR id='2845'  children: '2875' >
+													< terminal 'n'>
+													<DIGITS id='2875'  children: '2890' '2920' >
+														<D id='2890'  children: >
+															< terminal '5'>
+														</D>
+														<MORE id='2920'  children: >
+															< terminal 'ε'>
+														</MORE>
+													</DIGITS>
+												</NUMVAR>
+												< terminal ':'>
+												< terminal '='>
+												<NUMEXPR id='2980'  children: '2995' >
+													<DECNUM id='2995'  children: '3010' >
+														<POS id='3010'  children: '3025' '3100' '3130' >
+															<INT id='3025'  children: '3055' >
+																< terminal '6'>
+																<MORE id='3055'  children: >
+																	< terminal 'ε'>
+																</MORE>
+															</INT>
+															< terminal '.'>
+															<D id='3100'  children: >
+																< terminal '0'>
+															</D>
+															<D id='3130'  children: >
+																< terminal '0'>
+															</D>
+														</POS>
+													</DECNUM>
+												</NUMEXPR>
+											</ASSIGN>
+										</INSTR>
+										<COMMENT id='3160'  children: >
+											< terminal 'ε'>
+										</COMMENT>
+										<SEQ id='3190'  children: '3220' >
+											< terminal ';'>
+											<ALGO id='3220'  children: '3235' '3370' '3400' >
+												<INSTR id='3235'  children: '3250' >
+													<CALL id='3250'  children: '3295' >
+														< terminal 'c'>
+														< terminal 'p'>
+														<DIGITS id='3295'  children: '3310' '3340' >
+															<D id='3310'  children: >
+																< terminal '3'>
+															</D>
+															<MORE id='3340'  children: >
+																< terminal 'ε'>
+															</MORE>
+														</DIGITS>
+													</CALL>
+												</INSTR>
+												<COMMENT id='3370'  children: >
+													< terminal 'ε'>
+												</COMMENT>
+												<SEQ id='3400'  children: >
+													< terminal 'ε'>
+												</SEQ>
+											</ALGO>
+										</SEQ>
+									</ALGO>
+									<PROCDEFS id='3430'  children: >
+										< terminal 'ε'>
+									</PROCDEFS>
+								</PROGR>
+								< terminal '}'>
+							</PROC>
+							<PROCDEFS id='3475'  children: >
+								< terminal 'ε'>
+							</PROCDEFS>
+						</PROCDEFS>
+					</PROGR>
+					< terminal '}'>
+				</PROC>
+				<PROCDEFS id='3520'  children: >
+					< terminal 'ε'>
+				</PROCDEFS>
+			</PROCDEFS>
+		</PROCDEFS>
+	</PROCDEFS>
+</PROGR>
