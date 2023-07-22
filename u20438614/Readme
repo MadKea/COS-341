@@ -1,0 +1,12 @@
+Keabetswe Madumo
+Practical 3
+
+Chosen input: program code. Will be using OWN practical 2 parsing.
+
+Once the program is run you will be prompted to input the name of the program file. Please include the extension (.txt).
+
+The parsetree is within the parseTree.xml file and the symbol table is within the table.html file.
+
+If errors or naming convention errors are present no symbol table will be displayed as specified. However, warnings will be displayed alongside the symbol table.
+
+Best regards.
